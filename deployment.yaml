@@ -1,0 +1,105 @@
+# =============================================================================
+# KUBERNETES DEPLOYMENT CONFIGURATION FOR FLASK CHURN PREDICTION APP
+# =============================================================================
+# This file defines two Kubernetes resources:
+# 1. Service - Exposes the Flask app to external traffic
+# 2. Deployment - Manages the Flask app containers
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# SERVICE CONFIGURATION
+# -----------------------------------------------------------------------------
+# A Service provides a stable network endpoint for accessing your app
+# It acts as a load balancer that distributes traffic to healthy pod replicas
+apiVersion: v1                    # Kubernetes API version for Service resources
+kind: Service                     # Type of Kubernetes resource
+metadata:
+  name: ml-service               # Name of the service (used for DNS resolution)
+spec:
+  selector:
+    app: flask-app               # Selects pods with label "app: flask-app" to route traffic to
+  ports:
+  - protocol: "TCP"              # Network protocol (TCP for HTTP traffic)
+    port: 8088                   # External port that clients connect to
+    targetPort: 5000             # Internal port that Flask app listens on inside containers
+  type: LoadBalancer             # Service type - creates external load balancer
+                                # Note: In local dev (minikube/kind), use NodePort or port-forward instead
+
+---                             # YAML document separator
+
+# -----------------------------------------------------------------------------
+# DEPLOYMENT CONFIGURATION  
+# -----------------------------------------------------------------------------
+# A Deployment manages the lifecycle of your application pods
+# It ensures desired number of replicas are running and handles updates/rollbacks
+apiVersion: apps/v1              # Kubernetes API version for Deployment resources
+kind: Deployment                 # Type of Kubernetes resource
+metadata:
+  name: flask-app                # Name of the deployment
+spec:
+  selector:
+    matchLabels:
+      app: flask-app             # Must match the labels in template.metadata.labels
+  replicas: 4                    # Number of pod instances to run (horizontal scaling)
+                                # 4 replicas provide redundancy and load distribution
+  template:                      # Pod template - defines how each pod should be created
+    metadata:
+      labels:
+        app: flask-app           # Labels applied to each pod (must match selector above)
+    spec:                        # Pod specification
+      containers:                # List of containers in each pod
+      - name: flask-app          # Container name (for identification in kubectl commands)
+        image: flask_app:latest  # Docker image to use
+                                # WARNING: 'latest' tag is not recommended for production
+                                # Use specific version tags like 'flask_app:v1.2.3'
+        imagePullPolicy: Never   # Don't pull image from registry, use local image only
+                                # Useful for development with locally built images
+                                # For production, use 'Always' or 'IfNotPresent'
+        ports:
+        - containerPort: 5000    # Port that Flask app listens on inside the container
+                                # This should match the port your Flask app uses
+
+# =============================================================================
+# DEPLOYMENT INSTRUCTIONS:
+# =============================================================================
+# 1. Make sure your Docker image is built locally:
+#    docker build -f dockerfile -t flask_app:latest .
+#
+# 2. Apply this configuration:
+#    kubectl apply -f deployment.yaml
+#
+# 3. Check deployment status:
+#    kubectl get deployments
+#    kubectl get pods
+#    kubectl get services
+#
+# 4. For local development access:
+#    kubectl port-forward service/ml-service 8088:8088
+#    Then access: http://localhost:8088
+#
+# 5. Scale the deployment if needed:
+#    kubectl scale deployment flask-app --replicas=6
+#
+# 6. Monitor logs:
+#    kubectl logs -f deployment/flask-app
+# =============================================================================
+
+# =============================================================================
+# PRODUCTION CONSIDERATIONS:
+# =============================================================================
+# 1. Use specific image tags instead of 'latest'
+# 2. Add resource limits and requests:
+#    resources:
+#      limits:
+#        cpu: 500m
+#        memory: 512Mi
+#      requests:
+#        cpu: 250m
+#        memory: 256Mi
+# 3. Add health checks (readiness and liveness probes)
+# 4. Consider using a ConfigMap for configuration
+# 5. Add persistent volumes for model files if they're large
+# 6. Set up proper RBAC and security contexts
+# 7. Use secrets for sensitive configuration
+# =============================================================================
+        

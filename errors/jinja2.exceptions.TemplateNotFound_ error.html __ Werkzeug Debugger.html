@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>jinja2.exceptions.TemplateNotFound: error.html
+ // Werkzeug Debugger</title>
+    <link rel="stylesheet" href="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/style.css">
+    <link rel="shortcut icon" href="http://127.0.0.1:5000/predict?__debugger__=yes&amp;cmd=resource&amp;f=console.png">
+    <script src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/debugger.js"></script>
+    <script>
+      var CONSOLE_MODE = false,
+          EVALEX = true,
+          EVALEX_TRUSTED = false,
+          SECRET = "rRAPdtBdUDPhmr7df1tv";
+    </script>
+  </head>
+  <body style="background-color: #fff">
+    <div class="debugger">
+<h1>TemplateNotFound</h1>
+<div class="detail">
+  <p class="errormsg">jinja2.exceptions.TemplateNotFound: error.html
+</p>
+</div>
+<h2 class="traceback" style="cursor: pointer;">Traceback <em>(most recent call last)</em></h2>
+<div class="traceback">
+  <h3></h3>
+  <ul><li><div class="frame" id="frame-2644145871248">
+  <h4>File <cite class="filename">"c:\Users\caudi\Documents\BdeB\A61\PROJET_SYNTHESE_IA\venv\flask_app\routes.py"</cite>,
+      line <em class="line">185</em>,
+      in <code class="function">predict</code></h4>
+  <div class="source "><pre class="line before"><span class="ws"></span> <img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">        </span># ==============================================<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">        </span># MAKE PREDICTION<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">        </span># ==============================================<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws"></span> <img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line current"><span class="ws">        </span>prediction = model.predict(input_data)[0]
+<span class="ws">        </span>             ^^^^^^^^^^^^^^^^^^^^^^^^^<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>prediction_proba = model.predict_proba(input_data)[0][1]<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws"></span> <img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span># Prepare results for display<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>customer_details = customer_row.iloc[0].to_dict()<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>churn_status = "High Risk of Churning" if prediction == 1 else "Low Risk of Churning"<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre></div>
+</div>
+
+</li><li><div class="frame" id="frame-2644145871392">
+  <h4>File <cite class="filename">"C:\Users\caudi\Documents\BdeB\A61\PROJET_SYNTHESE_IA\venv\Lib\site-packages\sklearn\pipeline.py"</cite>,
+      line <em class="line">786</em>,
+      in <code class="function">predict</code></h4>
+  <div class="source library"><pre class="line before"><span class="ws">        </span>with _raise_or_warn_if_not_fitted(self):<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">            </span>Xt = X<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws"></span> <img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">            </span>if not _routing_enabled():<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">                </span>for _, name, transform in self._iter(with_final=False):<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line current"><span class="ws">                    </span>Xt = transform.transform(Xt)
+<span class="ws">                    </span>     ^^^^^^^^^^^^^^^^^^^^^^^<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">                </span>return self.steps[-1][1].predict(Xt, **params)<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws"></span> <img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">            </span># metadata routing enabled<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">            </span>routed_params = process_routing(self, "predict", **params)<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">            </span>for _, name, transform in self._iter(with_final=False):<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre></div>
+</div>
+
+</li><li><div class="frame" id="frame-2644145871536">
+  <h4>File <cite class="filename">"C:\Users\caudi\Documents\BdeB\A61\PROJET_SYNTHESE_IA\venv\Lib\site-packages\sklearn\utils\_set_output.py"</cite>,
+      line <em class="line">316</em>,
+      in <code class="function">wrapped</code></h4>
+  <div class="source library"><pre class="line before"><span class="ws"></span>def _wrap_method_output(f, method):<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">    </span>"""Wrapper used by `_SetOutputMixin` to automatically wrap methods."""<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws"></span> <img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">    </span>@wraps(f)<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">    </span>def wrapped(self, X, *args, **kwargs):<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line current"><span class="ws">        </span>data_to_wrap = f(self, X, *args, **kwargs)
+<span class="ws">        </span>               ^^^^^^^^^^^^^^^^^^^^^^^^^^^<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>if isinstance(data_to_wrap, tuple):<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">            </span># only wrap the first output for cross decomposition<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">            </span>return_tuple = (<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">                </span>_wrap_data_with_container(method, data_to_wrap[0], X, self),<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">                </span>*data_to_wrap[1:],<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre></div>
+</div>
+
+</li><li><div class="frame" id="frame-2644145871680">
+  <h4>File <cite class="filename">"C:\Users\caudi\Documents\BdeB\A61\PROJET_SYNTHESE_IA\venv\Lib\site-packages\sklearn\compose\_column_transformer.py"</cite>,
+      line <em class="line">1085</em>,
+      in <code class="function">transform</code></h4>
+  <div class="source library"><pre class="line before"><span class="ws">            </span>all_indices = set(chain(*non_dropped_indices))<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">            </span>all_names = set(self.feature_names_in_[ind] for ind in all_indices)<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws"></span> <img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">            </span>diff = all_names - set(column_names)<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">            </span>if diff:<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line current"><span class="ws">                </span>raise ValueError(f"columns are missing: {diff}")
+<span class="ws">                </span>^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>else:<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">            </span># ndarray was used for fitting or transforming, thus we only<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">            </span># check that n_features_in_ is consistent<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">            </span>_check_n_features(self, X, reset=False)<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws"></span> <img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre></div>
+</div>
+
+</li><li><div class="exc-divider">During handling of the above exception, another exception occurred:</div>
+</li><li><div class="frame" id="frame-2644145190464">
+  <h4>File <cite class="filename">"C:\Users\caudi\Documents\BdeB\A61\PROJET_SYNTHESE_IA\venv\Lib\site-packages\flask\app.py"</cite>,
+      line <em class="line">1536</em>,
+      in <code class="function">__call__</code></h4>
+  <div class="source library"><pre class="line before"><span class="ws">    </span>) -&gt; cabc.Iterable[bytes]:<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">        </span>"""The WSGI server calls the Flask application object as the<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">        </span>WSGI application. This calls :meth:`wsgi_app`, which can be<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">        </span>wrapped to apply middleware.<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">        </span>"""<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line current"><span class="ws">        </span>return self.wsgi_app(environ, start_response)
+<span class="ws">        </span>       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre></div>
+</div>
+
+</li><li><div class="frame" id="frame-2644145868944">
+  <h4>File <cite class="filename">"C:\Users\caudi\Documents\BdeB\A61\PROJET_SYNTHESE_IA\venv\Lib\site-packages\flask\app.py"</cite>,
+      line <em class="line">1514</em>,
+      in <code class="function">wsgi_app</code></h4>
+  <div class="source library"><pre class="line before"><span class="ws">            </span>try:<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">                </span>ctx.push()<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">                </span>response = self.full_dispatch_request()<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">            </span>except Exception as e:<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">                </span>error = e<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line current"><span class="ws">                </span>response = self.handle_exception(e)
+<span class="ws">                </span>           ^^^^^^^^^^^^^^^^^^^^^^^^<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">            </span>except:  # noqa: B001<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">                </span>error = sys.exc_info()[1]<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">                </span>raise<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">            </span>return response(environ, start_response)<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>finally:<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre></div>
+</div>
+
+</li><li><div class="frame" id="frame-2644145869088">
+  <h4>File <cite class="filename">"C:\Users\caudi\Documents\BdeB\A61\PROJET_SYNTHESE_IA\venv\Lib\site-packages\flask\app.py"</cite>,
+      line <em class="line">1511</em>,
+      in <code class="function">wsgi_app</code></h4>
+  <div class="source library"><pre class="line before"><span class="ws">        </span>ctx = self.request_context(environ)<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">        </span>error: BaseException | None = None<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">        </span>try:<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">            </span>try:<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">                </span>ctx.push()<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line current"><span class="ws">                </span>response = self.full_dispatch_request()
+<span class="ws">                </span>           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">            </span>except Exception as e:<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">                </span>error = e<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">                </span>response = self.handle_exception(e)<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">            </span>except:  # noqa: B001<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">                </span>error = sys.exc_info()[1]<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre></div>
+</div>
+
+</li><li><div class="frame" id="frame-2644145869232">
+  <h4>File <cite class="filename">"C:\Users\caudi\Documents\BdeB\A61\PROJET_SYNTHESE_IA\venv\Lib\site-packages\flask\app.py"</cite>,
+      line <em class="line">919</em>,
+      in <code class="function">full_dispatch_request</code></h4>
+  <div class="source library"><pre class="line before"><span class="ws">            </span>request_started.send(self, _async_wrapper=self.ensure_sync)<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">            </span>rv = self.preprocess_request()<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">            </span>if rv is None:<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">                </span>rv = self.dispatch_request()<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">        </span>except Exception as e:<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line current"><span class="ws">            </span>rv = self.handle_user_exception(e)
+<span class="ws">            </span>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>return self.finalize_request(rv)<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws"></span> <img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">    </span>def finalize_request(<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>self,<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>rv: ft.ResponseReturnValue | HTTPException,<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre></div>
+</div>
+
+</li><li><div class="frame" id="frame-2644145869376">
+  <h4>File <cite class="filename">"C:\Users\caudi\Documents\BdeB\A61\PROJET_SYNTHESE_IA\venv\Lib\site-packages\flask\app.py"</cite>,
+      line <em class="line">917</em>,
+      in <code class="function">full_dispatch_request</code></h4>
+  <div class="source library"><pre class="line before"><span class="ws"></span> <img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">        </span>try:<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">            </span>request_started.send(self, _async_wrapper=self.ensure_sync)<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">            </span>rv = self.preprocess_request()<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">            </span>if rv is None:<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line current"><span class="ws">                </span>rv = self.dispatch_request()
+<span class="ws">                </span>     ^^^^^^^^^^^^^^^^^^^^^^^<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>except Exception as e:<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">            </span>rv = self.handle_user_exception(e)<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>return self.finalize_request(rv)<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws"></span> <img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">    </span>def finalize_request(<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre></div>
+</div>
+
+</li><li><div class="frame" id="frame-2644145869520">
+  <h4>File <cite class="filename">"C:\Users\caudi\Documents\BdeB\A61\PROJET_SYNTHESE_IA\venv\Lib\site-packages\flask\app.py"</cite>,
+      line <em class="line">902</em>,
+      in <code class="function">dispatch_request</code></h4>
+  <div class="source library"><pre class="line before"><span class="ws">            </span>and req.method == "OPTIONS"<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">        </span>):<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">            </span>return self.make_default_options_response()<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">        </span># otherwise dispatch to the handler for that endpoint<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">        </span>view_args: dict[str, t.Any] = req.view_args  # type: ignore[assignment]<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line current"><span class="ws">        </span>return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+<span class="ws">        </span>       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws"></span> <img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">    </span>def full_dispatch_request(self) -&gt; Response:<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>"""Dispatches the request and on top of that performs request<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>pre and postprocessing as well as HTTP exception catching and<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>error handling.<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre></div>
+</div>
+
+</li><li><div class="frame" id="frame-2644145869664">
+  <h4>File <cite class="filename">"c:\Users\caudi\Documents\BdeB\A61\PROJET_SYNTHESE_IA\venv\flask_app\routes.py"</cite>,
+      line <em class="line">215</em>,
+      in <code class="function">predict</code></h4>
+  <div class="source "><pre class="line before"><span class="ws">                            </span>model_name=model_metadata['model_name'],<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">                            </span>model_metrics=model_metadata['metrics'])<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws"></span> <img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">    </span>except Exception as e:<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">        </span>logger.error(f"Prediction error: {e}", exc_info=True)<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line current"><span class="ws">        </span>return render_template('error.html',
+<span class="ws">        </span>       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">                            </span>message=f"An error occurred during prediction: {str(e)}"), 500<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws"></span> <img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws"></span># ==============================================<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws"></span># APPLICATION ENTRY POINT<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws"></span># ==============================================<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre></div>
+</div>
+
+</li><li><div class="frame" id="frame-2644145869808">
+  <h4>File <cite class="filename">"C:\Users\caudi\Documents\BdeB\A61\PROJET_SYNTHESE_IA\venv\Lib\site-packages\flask\templating.py"</cite>,
+      line <em class="line">149</em>,
+      in <code class="function">render_template</code></h4>
+  <div class="source library"><pre class="line before"><span class="ws">    </span>:param template_name_or_list: The name of the template to render. If<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">        </span>a list is given, the first name to exist will be rendered.<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">    </span>:param context: The variables to make available in the template.<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">    </span>"""<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">    </span>app = current_app._get_current_object()  # type: ignore[attr-defined]<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line current"><span class="ws">    </span>template = app.jinja_env.get_or_select_template(template_name_or_list)
+<span class="ws">    </span>           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">    </span>return _render(app, template, context)<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws"></span> <img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws"></span> <img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws"></span>def render_template_string(source: str, **context: t.Any) -&gt; str:<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">    </span>"""Render a template from the given source string with the given<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre></div>
+</div>
+
+</li><li><div class="frame" id="frame-2644145869952">
+  <h4>File <cite class="filename">"C:\Users\caudi\Documents\BdeB\A61\PROJET_SYNTHESE_IA\venv\Lib\site-packages\jinja2\environment.py"</cite>,
+      line <em class="line">1087</em>,
+      in <code class="function">get_or_select_template</code></h4>
+  <div class="source library"><pre class="line before"><span class="ws">        </span>is given, or :meth:`get_template` if one name is given.<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws"></span> <img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">        </span>.. versionadded:: 2.3<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">        </span>"""<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">        </span>if isinstance(template_name_or_list, (str, Undefined)):<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line current"><span class="ws">            </span>return self.get_template(template_name_or_list, parent, globals)
+<span class="ws">            </span>       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>elif isinstance(template_name_or_list, Template):<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">            </span>return template_name_or_list<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>return self.select_template(template_name_or_list, parent, globals)<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws"></span> <img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">    </span>def from_string(<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre></div>
+</div>
+
+</li><li><div class="frame" id="frame-2644145870384">
+  <h4>File <cite class="filename">"C:\Users\caudi\Documents\BdeB\A61\PROJET_SYNTHESE_IA\venv\Lib\site-packages\jinja2\environment.py"</cite>,
+      line <em class="line">1016</em>,
+      in <code class="function">get_template</code></h4>
+  <div class="source library"><pre class="line before"><span class="ws">        </span>if isinstance(name, Template):<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">            </span>return name<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">        </span>if parent is not None:<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">            </span>name = self.join_path(name, parent)<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws"></span> <img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line current"><span class="ws">        </span>return self._load_template(name, globals)
+<span class="ws">        </span>       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws"></span> <img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">    </span>@internalcode<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">    </span>def select_template(<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>self,<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>names: t.Iterable[t.Union[str, "Template"]],<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre></div>
+</div>
+
+</li><li><div class="frame" id="frame-2644145870528">
+  <h4>File <cite class="filename">"C:\Users\caudi\Documents\BdeB\A61\PROJET_SYNTHESE_IA\venv\Lib\site-packages\jinja2\environment.py"</cite>,
+      line <em class="line">975</em>,
+      in <code class="function">_load_template</code></h4>
+  <div class="source library"><pre class="line before"><span class="ws">                </span>if globals:<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">                    </span>template.globals.update(globals)<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws"></span> <img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">                </span>return template<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws"></span> <img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line current"><span class="ws">        </span>template = self.loader.load(self, name, self.make_globals(globals))
+<span class="ws">        </span>           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws"></span> <img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>if self.cache is not None:<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">            </span>self.cache[cache_key] = template<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>return template<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws"></span> <img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre></div>
+</div>
+
+</li><li><div class="frame" id="frame-2644145870672">
+  <h4>File <cite class="filename">"C:\Users\caudi\Documents\BdeB\A61\PROJET_SYNTHESE_IA\venv\Lib\site-packages\jinja2\loaders.py"</cite>,
+      line <em class="line">126</em>,
+      in <code class="function">load</code></h4>
+  <div class="source library"><pre class="line before"><span class="ws">        </span>if globals is None:<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">            </span>globals = {}<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws"></span> <img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">        </span># first we try to get the source for this template together<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">        </span># with the filename and the uptodate function.<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line current"><span class="ws">        </span>source, filename, uptodate = self.get_source(environment, name)
+<span class="ws">        </span>                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws"></span> <img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span># try to load the code from the bytecode cache if there is a<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span># bytecode cache configured.<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>bcc = environment.bytecode_cache<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>if bcc is not None:<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre></div>
+</div>
+
+</li><li><div class="frame" id="frame-2644145870816">
+  <h4>File <cite class="filename">"C:\Users\caudi\Documents\BdeB\A61\PROJET_SYNTHESE_IA\venv\Lib\site-packages\flask\templating.py"</cite>,
+      line <em class="line">65</em>,
+      in <code class="function">get_source</code></h4>
+  <div class="source library"><pre class="line before"><span class="ws">    </span>def get_source(<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">        </span>self, environment: BaseEnvironment, template: str<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">    </span>) -&gt; tuple[str, str | None, t.Callable[[], bool] | None]:<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">        </span>if self.app.config["EXPLAIN_TEMPLATE_LOADING"]:<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">            </span>return self._get_source_explained(environment, template)<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line current"><span class="ws">        </span>return self._get_source_fast(environment, template)
+<span class="ws">        </span>       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws"></span> <img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">    </span>def _get_source_explained(<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>self, environment: BaseEnvironment, template: str<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">    </span>) -&gt; tuple[str, str | None, t.Callable[[], bool] | None]:<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>attempts = []<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre></div>
+</div>
+
+</li><li><div class="frame" id="frame-2644145871104">
+  <h4>File <cite class="filename">"C:\Users\caudi\Documents\BdeB\A61\PROJET_SYNTHESE_IA\venv\Lib\site-packages\flask\templating.py"</cite>,
+      line <em class="line">99</em>,
+      in <code class="function">_get_source_fast</code></h4>
+  <div class="source library"><pre class="line before"><span class="ws">        </span>for _srcobj, loader in self._iter_loaders(template):<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">            </span>try:<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">                </span>return loader.get_source(environment, template)<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">            </span>except TemplateNotFound:<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">                </span>continue<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line current"><span class="ws">        </span>raise TemplateNotFound(template)
+<span class="ws">        </span>^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws"></span> <img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">    </span>def _iter_loaders(self, template: str) -&gt; t.Iterator[tuple[Scaffold, BaseLoader]]:<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>loader = self.app.jinja_loader<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>if loader is not None:<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">            </span>yield self.app, loader<img src="jinja2.exceptions.TemplateNotFound_%20error.html%20__%20Werkzeug%20Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre></div>
+</div>
+</li></ul>
+  <blockquote>jinja2.exceptions.TemplateNotFound: error.html
+</blockquote>
+</div>
+
+<div class="plain hidden">
+    <p>
+      This is the Copy/Paste friendly version of the traceback.
+    </p>
+    <pre>Traceback (most recent call last):
+  File "c:\Users\caudi\Documents\BdeB\A61\PROJET_SYNTHESE_IA\venv\flask_app\routes.py", line 185, in predict
+    prediction = model.predict(input_data)[0]
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caudi\Documents\BdeB\A61\PROJET_SYNTHESE_IA\venv\Lib\site-packages\sklearn\pipeline.py", line 786, in predict
+    Xt = transform.transform(Xt)
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caudi\Documents\BdeB\A61\PROJET_SYNTHESE_IA\venv\Lib\site-packages\sklearn\utils\_set_output.py", line 316, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caudi\Documents\BdeB\A61\PROJET_SYNTHESE_IA\venv\Lib\site-packages\sklearn\compose\_column_transformer.py", line 1085, in transform
+    raise ValueError(f"columns are missing: {diff}")
+ValueError: columns are missing: {'Internet Type'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\caudi\Documents\BdeB\A61\PROJET_SYNTHESE_IA\venv\Lib\site-packages\flask\app.py", line 1536, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caudi\Documents\BdeB\A61\PROJET_SYNTHESE_IA\venv\Lib\site-packages\flask\app.py", line 1514, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caudi\Documents\BdeB\A61\PROJET_SYNTHESE_IA\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caudi\Documents\BdeB\A61\PROJET_SYNTHESE_IA\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caudi\Documents\BdeB\A61\PROJET_SYNTHESE_IA\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caudi\Documents\BdeB\A61\PROJET_SYNTHESE_IA\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\caudi\Documents\BdeB\A61\PROJET_SYNTHESE_IA\venv\flask_app\routes.py", line 215, in predict
+    return render_template('error.html',
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caudi\Documents\BdeB\A61\PROJET_SYNTHESE_IA\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caudi\Documents\BdeB\A61\PROJET_SYNTHESE_IA\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caudi\Documents\BdeB\A61\PROJET_SYNTHESE_IA\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caudi\Documents\BdeB\A61\PROJET_SYNTHESE_IA\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caudi\Documents\BdeB\A61\PROJET_SYNTHESE_IA\venv\Lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caudi\Documents\BdeB\A61\PROJET_SYNTHESE_IA\venv\Lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caudi\Documents\BdeB\A61\PROJET_SYNTHESE_IA\venv\Lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: error.html
+</pre>
+</div>
+<div class="explanation">
+  The debugger caught an exception in your WSGI application.  You can now
+  look at the traceback which led to the error.  <span class=""><p>To 
+switch between the interactive traceback and the plaintext one, you can 
+click on the "Traceback" headline. From the text traceback you can also 
+create a paste of it. For code execution mouse-over the frame you want 
+to debug and click on the console icon on the right side.</p><p>You can execute arbitrary Python code in the stack frames and there are some extra helpers available for introspection:</p><ul><li><code>dump()</code> shows all variables in the frame</li><li><code>dump(obj)</code> dumps all that's known about the object</li></ul></span>
+</div>
+      <div class="footer">
+        Brought to you by <strong class="arthur">DON'T PANIC</strong>, your
+        friendly Werkzeug powered traceback interpreter.
+      </div>
+    </div>
+
+    <div class="pin-prompt">
+      <div class="inner">
+        <h3>Console Locked</h3>
+        <p>
+          The console is locked and needs to be unlocked by entering the PIN.
+          You can find the PIN printed out on the standard output of your
+          shell that runs the server.
+        </p><form>
+          <p>PIN:
+            <input type="text" name="pin" size="14">
+            <input type="submit" name="btn" value="Confirm Pin">
+        </p></form>
+      </div>
+    </div>
+  
+
+
+
+</body></html>
+<!--
+
+Traceback (most recent call last):
+  File "c:\Users\caudi\Documents\BdeB\A61\PROJET_SYNTHESE_IA\venv\flask_app\routes.py", line 185, in predict
+    prediction = model.predict(input_data)[0]
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caudi\Documents\BdeB\A61\PROJET_SYNTHESE_IA\venv\Lib\site-packages\sklearn\pipeline.py", line 786, in predict
+    Xt = transform.transform(Xt)
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caudi\Documents\BdeB\A61\PROJET_SYNTHESE_IA\venv\Lib\site-packages\sklearn\utils\_set_output.py", line 316, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caudi\Documents\BdeB\A61\PROJET_SYNTHESE_IA\venv\Lib\site-packages\sklearn\compose\_column_transformer.py", line 1085, in transform
+    raise ValueError(f"columns are missing: {diff}")
+ValueError: columns are missing: {'Internet Type'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\caudi\Documents\BdeB\A61\PROJET_SYNTHESE_IA\venv\Lib\site-packages\flask\app.py", line 1536, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caudi\Documents\BdeB\A61\PROJET_SYNTHESE_IA\venv\Lib\site-packages\flask\app.py", line 1514, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caudi\Documents\BdeB\A61\PROJET_SYNTHESE_IA\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caudi\Documents\BdeB\A61\PROJET_SYNTHESE_IA\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caudi\Documents\BdeB\A61\PROJET_SYNTHESE_IA\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caudi\Documents\BdeB\A61\PROJET_SYNTHESE_IA\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\caudi\Documents\BdeB\A61\PROJET_SYNTHESE_IA\venv\flask_app\routes.py", line 215, in predict
+    return render_template('error.html',
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caudi\Documents\BdeB\A61\PROJET_SYNTHESE_IA\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caudi\Documents\BdeB\A61\PROJET_SYNTHESE_IA\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caudi\Documents\BdeB\A61\PROJET_SYNTHESE_IA\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caudi\Documents\BdeB\A61\PROJET_SYNTHESE_IA\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caudi\Documents\BdeB\A61\PROJET_SYNTHESE_IA\venv\Lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caudi\Documents\BdeB\A61\PROJET_SYNTHESE_IA\venv\Lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caudi\Documents\BdeB\A61\PROJET_SYNTHESE_IA\venv\Lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: error.html
+
+
+-->
